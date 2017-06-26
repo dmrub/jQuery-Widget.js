@@ -15,4 +15,4 @@ EXPOSE 3000
 
 # Run base binary
 WORKDIR ${dir}
-CMD cp /tmp/settings.json settings.json && rm -rf queries && cp -r /tmp/queries queries/ && npm start
+CMD cp /tmp/settings.json settings.json && rm -rf queries && cp -r /tmp/queries queries/ && exec npm start
